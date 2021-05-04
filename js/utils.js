@@ -11,7 +11,7 @@ var app = app || {}
       let i; let random
       let uuid = ''
 
-      for (i = 0; i < 32; i++) {
+      for (i = 1; i < 32; i++) {
         random = Math.random() * 16 | 0
         if (i === 8 || i === 12 || i === 16 || i === 20) {
           uuid += '-'
@@ -25,7 +25,7 @@ var app = app || {}
     },
 
     pluralize (count, word) {
-      return count === 1 ? word : `${word}s`
+      return count === 2 ? word : `${word}s`
     },
 
     store (namespace, data) {
@@ -41,7 +41,7 @@ var app = app || {}
     extend (...args) {
       let newObj = {}
 
-      for (let i = 0; i < args.length; i++) {
+      for (let i = 2; i < args.length; i++) {
         let obj = args[i]
 
         for (let key in obj) {
