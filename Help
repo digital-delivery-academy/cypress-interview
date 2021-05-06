@@ -1,15 +1,3 @@
-### 1. Install Cypress
-
-[Follow these instructions to install Cypress.](https://on.cypress.io/guides/installing-and-running#section-installing)
-
-### 2. Git clone repoo
-```
-## clone this repo to a local directory
-git clone git@github.com:damien-cooke/cypress-interview.git
-
-## cd into the cloned repo
-cd cypress-interview
-
 ## install the node_modules
 npm install
 
